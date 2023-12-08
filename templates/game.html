@@ -8,31 +8,170 @@
     <h1>Let's play the madlib game</h1>
 
     <form action="/madlib">
-        <label for="person-name">Enter a person name:</label>
-        <input type="text" name="person" id="person-name">
+        <label for="verb1">Enter a Verb:</label>
+        <input type="text" name="verb1" id="verb1"><br>
 
-        <label for="color">Choose a color:</label>
-        <select name="lang-color" id="color">
-            <option value="pink">Pink</option>
-            <option value="red">Red</option>
-            <option value="green">Green</option>
-            <option value="white">White</option>
-            <option value="purple">Purple</option>
-            <option value="yellow">Yellow</option>
-            <option value="orange">Orange</option>
-            <option value="black">Black</option>
-            <option value="blue">Blue</option>
-            <option value="silver">Silver</option>
-            <option value="brown">Brown</option>
-        </select>
+        <label for="person1">Enter a Person:</label>
+        <input type="text" name="person1" id="person1"><br>
 
-        <label for="noun">Enter a Noun:</label>
-        <input type="text" name="noun" id="noun">
+        <label for="noun1">Enter a Noun:</label>
+        <input type="text" name="noun1" id="noun1"><br>
 
-        <label for="adjective">Enter a Adjective:</label>
-        <input type="text" name="adjective" id="adjective">
+        <label for="person2">Enter another Person:</label>
+        <input type="text" name="person2" id="person2"><br>
 
-        <button type="submit">Submit</button>
+        <label for="noun2">Enter another Noun:</label>
+        <input type="text" name="noun2" id="noun2"><br>
+
+        <label for="noun3">Choose a Noun:</label>
+        <select name="lang-noun" id="noun3">
+            <option value="water">Water</option>
+            <option value="state">State</option>
+            <option value="hospital">Hospital</option>
+            <option value="garden">Garden</option>
+            <option value="mask">Mask</option>
+            <option value="country">country</option>
+            <option value="marmoset">Marmoset</option>
+            <option value="boots">boots</option>
+            <option value="dragon">Dragon</option>
+            <option value="pig">Pig</option>
+            <option value="key">Key</option>
+        </select><br>
+
+        Pick a room in the house:
+        <label for="chimney">Chimney</label>
+        <input type="checkbox" name="house-room" value="chimney" id="chimney">
+
+        <label for="balconi">Balconi</label>
+        <input type="checkbox" name="house-room" value="balconi" id="balconi">
+
+        <label for="roof">Roof</label>
+        <input type="checkbox" name="house-room" value="roof" id="roof">
+
+        <label for="attic">Attic</label>
+        <input type="checkbox" name="house-room" value="attic" id="attic">
+
+        <label for="nursery-room">Nursery Room</label>
+        <input type="checkbox" name="house-room" value="nursery-room" id="nursery-room">
+
+        <label for="basement">Basement</label>
+        <input type="checkbox" name="house-room" value="basement" id="basement">
+
+        <label for="laudnry-room">Laundry Room</label>
+        <input type="checkbox" name="house-room" value="laudnry" id="laudnry-room">
+
+        <label for="garage">Garage</label>
+        <input type="checkbox" name="house-room" value="garage" id="garage">
+
+        <label for="home-office">Home Office</label>
+        <input type="checkbox" name="house-room" value="home-office" id="home-office"><br>
+
+        Choose another Person:
+        <input type="radio" name="person3" value="mom" id="mom">
+        <label for="mom">Mom</label>
+
+        <input type="radio" name="person3" value="dad" id="dad">
+        <label for="dad">Dad</label>
+
+        <input type="radio" name="person3" value="teacher" id="teacher">
+        <label for="teacher">Teacher</label>
+
+        <input type="radio" name="person3" value="banker" id="banker">
+        <label for="banker">Banker</label>
+
+        <input type="radio" name="person3" value="minister" id="minister">
+        <label for="minister">Minister</label>
+
+        <input type="radio" name="person3" value="driver" id="driver">
+        <label for="driver">Driver</label>
+
+        <input type="radio" name="person3" value="grandma" id="grandma">
+        <label for="grandma">Grandma</label><br>
+
+        <label for="food">Enter a Food:</label>
+        <input type="text" name="food" id="food"><br>
+
+        <label for="adjective1">Enter a Adjective:</label>
+        <input type="text" name="adjective1" id="adjective1"><br>
+
+        <label for="adjective2">Enter another Adjective:</label>
+        <input type="text" name="adjective2" id="adjective2"><br>
+
+        Pick one of the following Adjectives:
+        <input type="radio" name="adjective3" value="amused" id="amused">
+        <label for="amused">Amused</label>
+
+        <input type="radio" name="adjective3" value="jealous" id="jealous">
+        <label for="jealous">Jealous</label>
+
+        <input type="radio" name="adjective3" value="nutty" id="nutty">
+        <label for="nutty">Nutty</label>
+
+        <input type="radio" name="adjective3" value="jolly" id="jolly">
+        <label for="jolly">Jolly</label>
+
+        <input type="radio" name="adjective3" value="high" id="high">
+        <label for="high">High</label>
+
+        <input type="radio" name="adjective3" value="mysterious" id="mysterious">
+        <label for="mysterious">Mysterious</label>
+
+        <input type="radio" name="adjective3" value="zany" id="zany">
+        <label for="zany">Zany</label>
+
+        <input type="radio" name="adjective3" value="colossal" id="colossal">
+        <label for="colossal">Colossal</label>
+
+        <input type="radio" name="adjective3" value="foolish" id="foolish">
+        <label for="foolish">Foolish</label>
+
+        <input type="radio" name="adjective3" value="lovely" id="lovely">
+        <label for="lovely">Lovely</label>
+
+        <input type="radio" name="adjective3" value="helpless" id="helpless">
+        <label for="helpless">Helpless</label><br>
+
+        <label for="scent">Enter a Scent:</label>
+        <input type="text" name="scent" id="scent"><br>
+
+        <label for="verb2">Enter another verb:</label>
+        <input type="text" name="verb2" id="verb2"><br>
+
+        <label for="noun4">Enter another noun:</label>
+        <input type="text" name="noun4" id="noun4"><br>
+
+        <label for="noun5">Pick another noun:</label>
+        <select name="noun5-lang" id="noun5">
+            <option value="psychic">Psychic</option>
+            <option value="bad-striped-hyena">Bad Striped Hyena</option>
+            <option value="dog-poop">Dog Poop</option>
+            <option value="complex-guilt">Complex Guilt</option>
+            <option value="karate">Karate</option>
+            <option value="corn-cake">Corn Cake</option>
+            <option value="tank">Tank</option>
+            <option value="pervert">Pervert</option>
+            <option value="messiness">Messiness</option>
+            <option value="hairy-legs">Hairy Legs</option>
+            <option value="toaster">Toaster</option>
+            <option value="idiot">Idiot</option>
+            <option value="blood-rage">Blood Rage</option>
+            <option value="lettuce">Lettuce</option>
+            <option value="compassionate-bad-mood">Compassionate Bad Mood</option>
+        </select><br>
+
+        <label for="person4">Enter another Person:</label>
+        <input type="text" name="person4" id="person4"><br>
+
+        <label for="transport">Enter a Transportation:</label>
+        <input type="text" name="transport" id="transport"><br>
+
+        <label for="animal">Enter a Animal:</label>
+        <input type="text" name="animal" id="animal"><br>
+
+        <label for="adjective4">Enter another Adjective:</label>
+        <input type="text" name="adjective4" id="adjective4"> <br>      
+
+        <button type="submit">Submit</button><br>
     </form>
 
 

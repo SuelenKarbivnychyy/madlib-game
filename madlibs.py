@@ -66,15 +66,49 @@ def show_madlib_form():
 def show_madlib():
     """Display user madlib"""
 
-    person_name = request.args.get("person")
-    color = request.args.get("lang-color")
-    noun = request.args.get("noun")
-    adjective = request.args.get("adjective")
+    verb1 = request.args.get("verb1")
+    person1 = request.args.get("person1")
+    noun1 = request.args.get("noun1")
+    person2 = request.args.get("person2")
+    noun2 = request.args.get("noun2")
+    noun3 = request.args.get("lang-noun")
+    room = request.args.get("house-room")
+    person3 = request.args.get("person3")
+    food = request.args.get("food")
+    adjective1 = request.args.get("adjective1")
+    adjective2 = request.args.get("adjective2")
+    adjective3 = request.args.get("adjective3")
+    scent = request.args.get("scent")
+    verb2 = request.args.get("verb2")
+    noun4 = request.args.get("noun4")
+    noun5 = request.args.get("noun5-lang")
+    person4 = request.args.get("person4")
+    transport = request.args.get("transport")
+    animal = request.args.get("animal")
+    adjective4 = request.args.get("adjective4")
 
-    return render_template("madlib.html", person=person_name,
-                           color=color,
-                           noun=noun,
-                           adjective=adjective)
+
+    return render_template("madlib.html", verb1=verb1,
+                        person1=person1,
+                        noun1=noun1,
+                        person2=person2,
+                        noun2=noun2,
+                        noun3=noun3,
+                        room=room,
+                        person3=person3,
+                        food=food,
+                        adjective1=adjective1,
+                        adjective2=adjective2,
+                        adjective3=adjective3,
+                        scent=scent,
+                        verb2=verb2,
+                        noun4=noun4,
+                        noun5=noun5,
+                        person4=person4,
+                        transport=transport,
+                        animal=animal,
+                        adjective4=adjective4               
+                        )
 
 
 if __name__ == "__main__":
