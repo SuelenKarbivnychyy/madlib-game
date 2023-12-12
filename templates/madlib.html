@@ -1,27 +1,29 @@
-<!doctype html>
-<html>
-<head>
-  <title>madlib</title>
-</head>
-<body>
+{% extends 'display_mdlib_base.html' %}
 
-<h1>Here is your madlib</h1>
+{% block title %}The Christmas mad lib{% endblock %}
 
-<p>
-    I am so excited for Christmas this year! 
-    I've been doing a lot of {{verb1}}ing to prepare!
+{% block content %}
 
-    I have already picked out presents for everyone. I got {{person1}} a {{noun1}} and {{person2}} a {{noun2}}. I wrapped their presents in {{noun3}} and hid it them in the {{room}} so they wouldn't find them.
-    {{person3}} and I made {{food}} for everyone to enjoy. They smell {{adjective1}}! I can't wait to eat them!
+<div>
 
-    We picked out the perfect tree. It is {{adjective2}}, and {{adjective3}} and smells like {{scent}}. It is my job to {{verb2}} the tree every day.
+    <h1 id="title">The Christmas mad lib</h1>
 
-    I've been hoping for a {{noun4}} under the christmas tree this year. I really don't want to get a {{noun5}} this year!
-    {{person4}} tells me that I need to go to bed early on christmas 
-    eve so Santa can come. He's going to drive his {{transport}} with his {{animal}}s and land on our roof.
 
-    I hope everyone has a {{adjective4}} Christmas!
-</p>
+    <p>
+        I am so excited for Christmas this year! 
+        I've been doing a lot of {{verb1}}ing to prepare!
 
-</body>
-</html>
+        I have already picked out presents for everyone. I got {{person1}} a {{noun1}} and {{person2}} a {{noun2}}. I wrapped their presents in {{noun3}} and hid it them in the {% for house_room in room %} {{house_room}} and {% endfor %} so they wouldn't find them.
+        {{person3}} and I made {{food}} for everyone to enjoy. They smell {{adjective1}}! I can't wait to eat them!
+
+        We picked out the perfect tree. It is {{adjective2}}, and {{adjective3}} and smells like {{scent}}. It is my job to {{verb2}} the tree every day.
+
+        I've been hoping for a {{noun4}} under the christmas tree this year. I really don't want to get a {{noun5}} this year!
+        {{person4}} tells me that I need to go to bed early on christmas 
+        eve so Santa can come. He's going to drive his {{transport}} with his {{animal}}s and land on our roof.
+
+        I hope everyone has a {{adjective4}} Christmas!
+    </p>
+
+</div>
+{% endblock %}

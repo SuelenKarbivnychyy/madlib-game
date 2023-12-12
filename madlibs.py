@@ -66,13 +66,14 @@ def show_madlib_form():
 def show_madlib():
     """Display user madlib"""
 
+
     verb1 = request.args.get("verb1")
     person1 = request.args.get("person1")
     noun1 = request.args.get("noun1")
     person2 = request.args.get("person2")
     noun2 = request.args.get("noun2")
     noun3 = request.args.get("lang-noun")
-    room = request.args.get("house-room")
+    room = request.args.getlist("house-room")
     person3 = request.args.get("person3")
     food = request.args.get("food")
     adjective1 = request.args.get("adjective1")
@@ -87,8 +88,13 @@ def show_madlib():
     animal = request.args.get("animal")
     adjective4 = request.args.get("adjective4")
 
+    templates = ["madlib.html", "madlib1.html"]
 
-    return render_template("madlib.html", verb1=verb1,
+    template_choose = choice(templates)
+    print(template_choose)
+
+
+    return render_template(template_choose, verb1=verb1,
                         person1=person1,
                         noun1=noun1,
                         person2=person2,

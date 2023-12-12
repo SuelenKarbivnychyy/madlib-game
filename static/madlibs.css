@@ -1,0 +1,27 @@
+div {    
+    padding: 10px;
+    border: 8px solid rgb(44, 33, 130);    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)    
+}
+
+#title {
+    text-align: center;
+    color:  rgb(21, 96, 177);
+}
+
+body {
+    background-color: rgb(181, 247, 224);
+}
+
+#fun-park {
+    /* height: 300px; */
+    padding: 10px;
+    border: 8px solid rgb(44, 33, 130);    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)  
+}
