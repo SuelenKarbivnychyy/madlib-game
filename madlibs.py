@@ -1,6 +1,6 @@
 """A madlib game that compliments its users."""
 
-from random import sample
+from random import sample, choice
 
 from flask import Flask, render_template, request
 
@@ -63,31 +63,31 @@ def show_madlib_form():
     else:
         return render_template("game.html")
     
-@app.route("/madlib")
+@app.route("/madlib", methods=['POST'])
 def show_madlib():
     """Display user madlib"""
 
 
-    verb1 = request.args.get("verb1")
-    person1 = request.args.get("person1")
-    noun1 = request.args.get("noun1")
-    person2 = request.args.get("person2")
-    noun2 = request.args.get("noun2")
-    noun3 = request.args.get("lang-noun")
-    room = request.args.getlist("house-room")
-    person3 = request.args.get("person3")
-    food = request.args.get("food")
-    adjective1 = request.args.get("adjective1")
-    adjective2 = request.args.get("adjective2")
-    adjective3 = request.args.get("adjective3")
-    scent = request.args.get("scent")
-    verb2 = request.args.get("verb2")
-    noun4 = request.args.get("noun4")
-    noun5 = request.args.get("noun5-lang")
-    person4 = request.args.get("person4")
-    transport = request.args.get("transport")
-    animal = request.args.get("animal")
-    adjective4 = request.args.get("adjective4")
+    verb1 = request.form.get("verb1")
+    person1 = request.form.get("person1")
+    noun1 = request.form.get("noun1")
+    person2 = request.form.get("person2")
+    noun2 = request.form.get("noun2")
+    noun3 = request.form.get("lang-noun")
+    room = request.form.getlist("house-room")
+    person3 = request.form.get("person3")
+    food = request.form.get("food")
+    adjective1 = request.form.get("adjective1")
+    adjective2 = request.form.get("adjective2")
+    adjective3 = request.form.get("adjective3")
+    scent = request.form.get("scent")
+    verb2 = request.form.get("verb2")
+    noun4 = request.form.get("noun4")
+    noun5 = request.form.get("noun5-lang")
+    person4 = request.form.get("person4")
+    transport = request.form.get("transport")
+    animal = request.form.get("animal")
+    adjective4 = request.form.get("adjective4")
 
     templates = ["madlib.html", "madlib1.html"]
 
